@@ -1,4 +1,5 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import path from 'path';
 
 import webpack from 'webpack';
@@ -17,12 +18,12 @@ app.use(webpackMiddleware(compiler, {
 }));
 app.use(webpackHotMiddleware(compiler));
 
-app.get('/shorten', (req, res) => {
-
-    bitlyApi.shorten('http://github.com/tanepiper/node-bitly').then((shortUrl) => {
+app.post('/shorten', bodyParser.json(), (req, res) => {
+    let {url} = req.body;
+    console.log(url);      // your JSON
+    bitlyApi.shorten(url).then((shortUrl) => {
         (shortUrl.message) ? res.status(400).send(shortUrl.message) : res.send(shortUrl);
     });
-
 });
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, './index.html'));
