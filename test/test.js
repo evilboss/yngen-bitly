@@ -10,8 +10,8 @@ describe(pkg.name, () => {
     });
 });
 
-describe('App should request bitly', function () {
-    it('should check bitly api', async function () {
+describe('App should request bitly', () => {
+    it('should check bitly api', async () => {
 
         assert.equal("Hi", "Hi");
     });

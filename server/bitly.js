@@ -9,7 +9,7 @@ class BitlyApi {
     async shorten(url) {
         return bitly
             .shorten(url)
-            .then(function (result) {
+            .then((result) => {
                 logWriter.write({
                     timestamp: moment().format('X'),
                     longURL: result.long_url,
@@ -17,7 +17,7 @@ class BitlyApi {
                 });
                 return result;
             })
-            .catch(function (error) {
+            .catch((error) => {
                 return error;
             });
 
