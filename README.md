@@ -38,8 +38,8 @@ Considerations
 * [x] Provide a project that can easily be built and tested.
 * [x] Include at least a simple web page to allow testing the API.
 Use ES6.
-* [x]  Make sure to wrap the functionality of communicating with bitly, in a class.
-* [x]  When using packages focus on promise-based packages and not callback-based packages.
-* [x]  Feel free to use npm packages for whatever you need and prefer.
-* [x]  Readability of the code and commenting will be taken into account.
+* [x] Make sure to wrap the functionality of communicating with bitly, in a class.
+* [x] When using packages focus on promise-based packages and not callback-based packages.
+* [x] Feel free to use npm packages for whatever you need and prefer.
+* [x] Readability of the code and commenting will be taken into account.
 
