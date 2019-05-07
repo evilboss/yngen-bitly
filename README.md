@@ -28,7 +28,7 @@ yarn start
 #test application
 yarn start
 
-#open browser
+#open browser and navigate to localhost:3000
 ```
 
 
