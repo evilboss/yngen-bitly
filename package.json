@@ -1,0 +1,22 @@
+{
+  "name": "Yngen-bitly",
+  "version": "1.0.0",
+  "description": "REST API to URL Shortener",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon --watch server --exec babel-node -- server/index.js",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jr Reyes",
+    "email": "jr.evilboss@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+
+  },`
+  "dependencies": {
+
+  }
+}
