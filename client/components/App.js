@@ -5,12 +5,12 @@ import UrlForm from './UrlForm';
 class App extends React.Component {
     render() {
         return (
-            <div className="container">
-                <div className="page-header">
-                    <h2></h2>
-                </div>
+            <div>
                 <Header/>
-                <UrlForm/>
+                <div className="container">
+                    <UrlForm/>
+                </div>
+
             </div>
         );
     }
