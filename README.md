@@ -43,3 +43,31 @@ Use ES6.
 * [x] Feel free to use npm packages for whatever you need and prefer.
 * [x] Readability of the code and commenting will be taken into account.
 
+Folder Structure
+-----------------
+
+```
+app
+├── client - Client folder
+│   ├── components - Components folder
+│   │   ├── App.js
+│   │   ├── Header.js
+│   │   └── UrlForm.js
+│   └── index.js
+├── package.json
+├── README.md
+├── server
+│   ├── bitly.js
+│   ├── config
+│   │   └── config.json
+│   ├── index.html
+│   ├── index.js
+│   ├── logWriter.js
+│   └── tmp
+│       └── log.txt
+├── test  - Test Folder
+│   └── test.js
+├── webpack.config.dev.js
+└── yarn.lock
+
+```
